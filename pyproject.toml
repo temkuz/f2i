@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "f2i"
+authors = [{ name = "temkuz", email = "temkuz@yandex.ru" }]
+version = "1.0.0"
+description = "Cli tool for converting a file into an image and back"
+readme="README.md"
+
+requires-python = ">=3.11"
+keywords = ["cli", "image", "convert"]
+dependencies = [
+    "Pillow >= 10.1.0"
+]
+
+[project.scripts]
+f2i = "f2i.__init__:main"
